@@ -16,6 +16,13 @@ $ composer require wasiliana/sms
 ```
 
 ## Usage
+Add your credentials to env.
+``` bash
+WASILIANA_SENDER_NAME
+WASILIANA_API_KEY
+```
+
+
 
 ## Change log
 
