@@ -1,0 +1,41 @@
+{
+    "name": "wasiliana/sms",
+    "description": "A laravel package to enable one send SMS via Wasiliana",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Le-Yo",
+            "email": "leo@devs.mobi",
+            "homepage": "https://wasiliana.io"
+        }
+    ],
+    "homepage": "https://github.com/wasiliana/sms",
+    "keywords": ["Laravel", "Sms"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wasiliana\\Sms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wasiliana\\Sms\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wasiliana\\Sms\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Wasiliana\\Sms\\Facades\\Sms"
+            }
+        }
+    }
+}
